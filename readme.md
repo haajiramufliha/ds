@@ -669,7 +669,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
-df = pd.read_csv("uci.csv")
+url = "https://raw.githubusercontent.com/venky14/Machine-Learning-with-Iris-Dataset/master/Iris.csv"
+df = pd.read_csv(url)
 
 # Normal values
 plt.plot(df.iloc[:, 0])
