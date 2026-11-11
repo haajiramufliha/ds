@@ -484,8 +484,9 @@ To perform univariate statistical analysis on the Pima Indians Diabetes dataset.
 ```python
 import pandas as pd
 
-df = pd.read_csv("diabetes.csv")
+url = "https://raw.githubusercontent.com/npradaschnor/Pima-Indians-Diabetes-Dataset/master/diabetes.csv"
 
+df = pd.read_csv(url)
 x = df["Glucose"]
 
 print("Frequency:")
